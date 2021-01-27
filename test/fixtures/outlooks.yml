@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2021-01-26
+  note: MyText
+  ref_link: MyString
+  stock: one
+
+two:
+  date: 2021-01-26
+  note: MyText
+  ref_link: MyString
+  stock: two
