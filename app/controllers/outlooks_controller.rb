@@ -1,2 +1,0 @@
-class OutlooksController < ApplicationController
-end
