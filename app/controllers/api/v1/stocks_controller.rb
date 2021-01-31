@@ -1,6 +1,6 @@
 class Api::V1::StocksController < ApplicationController
   def index
-    stocks = Stock.all
+    stocks = Stock.all.includes(:outlooks)
     render json: stocks
   end
 
