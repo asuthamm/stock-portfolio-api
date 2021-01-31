@@ -1,6 +1,5 @@
 class OutlookSerializer < ActiveModel::Serializer
-  attributes :id, :date, :note, :ref_link, :stock_symbol, :stock_name, :account_broker
-  # has_one :stock
+  attributes :account_broker, :stock_symbol, :stock_name, :ref_link, :note 
 
   def stock_symbol
     self.object.stock.symbol
@@ -13,4 +12,5 @@ class OutlookSerializer < ActiveModel::Serializer
   def account_broker
     self.object.stock.account.broker
   end
+
 end

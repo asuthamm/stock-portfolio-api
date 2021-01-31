@@ -1,6 +1,7 @@
 class Api::V1::OutlooksController < ApplicationController
   def index
     outlooks = Outlook.all
+    # byebug
     render json: outlooks
   end
   def show
